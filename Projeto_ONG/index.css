@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root{
+    --verde: rgb(3, 54, 20);
+}
+
+.parallax{
+    background-image: url(/imagens/Depositphotos_42469131_xl-2015-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 573px;
+    background-attachment: fixed;
+}
+
+.pelicula{
+    background-color: rgba(0, 0, 0, 0.500);
+    height: 493px;
+    text-align: center;
+}
+
+.logopelicula{
+    padding: 60px 0 0 0 ;
+    width: 500px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(7, 7, 7, 0.788);
+    align-items: center;
+    height: 80px;
+}
+
+.logo{
+    color: rgb(245, 245, 245);
+    padding: 5px 0 5px 55px;
+}
+
+.logo h1{
+    text-align: center;
+}
+
+
+.menu{
+    display: flex;
+    gap: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(253, 255, 253);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    font-weight: bolder;
+}
+
+.menu a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.button{
+    padding: 12px;
+    margin-right: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(3, 158, 3);
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+}
+
+.button:hover{
+    cursor: pointer;
+    
+}
+
+.section{
+    background-color: aliceblue;
+}
+
+
+.b1{
+    padding-top: 80px;
+}
+
+.b1 h2{
+    color: rgb(3, 54, 20);
+    position: relative;
+    
+    padding: 0 0 5px 55px;
+}
+
+.b1 h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(3, 54, 20);
+    margin: 0 0 0 55px;
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding: 55px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.13);
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.inforcard{
+    padding: 20px;
+}
+
+.data{
+    font-size: 12px;
+    color: rgb(3, 54, 20);
+    padding-bottom: 5px;
+}
+
+.card h3{
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+
+.inforcard p{
+    font-size: 13px;
+    padding-bottom: 15px;
+    line-height: 1.4;
+}
+
+.inforcard a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(3, 54, 20);
+}
+
+
+
+.headerb2{
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 55px 0 55px;
+    align-items: center;
+}
+
+.tittleb2 p{
+    color: var(--verde);
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.tittleb2 h2{
+    font-weight: 900;
+    color: var(--verde);
+    font-size: 25px;   
+}
+
+.temasb2{
+    display: flex;
+    gap: 20px;
+}
+
+.temasb2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--verde);
+}
+
+.temasb2 button:hover{
+    background-color: var(--verde);
+    color: white;
+}
+
+.cardsb2{
+    display: grid;
+    padding: 55px 65px;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cardb2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.13);
+    width: 350px;
+    border-radius: 20px;
+    transition: 0.5s;
+
+    
+}
+
+.cardb2:hover{
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cardb2 img{
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    max-height: 200px;
+    
+}
+
+.inforcardb2{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.tittlecardb2{
+    color: var(--verde);
+    font-size: 11px;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+
+.inforcardb2 h3{
+    font-weight: bolder;
+    padding-bottom: 4px;
+}
+
+.italico{
+    font-style: italic;
+    color: rgb(141, 141, 141);
+    font-size: 10px;
+    padding-bottom: 10px;
+    font-weight:500 ;
+}
+
+.pb2{
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(78, 78, 78);
+}
+
+.cardb2 button{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    margin-top: 15px;
+    background-color: rgb(206, 255, 226);
+    transition: 0.5s;
+    
+}
+
+.cardb2 button:hover{
+    background-color: rgb(158, 255, 207);
+    transform: translateY(-2px);
+}
