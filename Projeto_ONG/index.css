@@ -20,12 +20,12 @@
 
 .pelicula{
     background-color: rgba(0, 0, 0, 0.500);
-    height: 493px;
+    height: 600px;
     text-align: center;
 }
 
 .logopelicula{
-    padding: 60px 0 0 0 ;
+    padding: 120px 0 0 0 ;
     width: 500px;
 }
 
@@ -34,7 +34,10 @@
     justify-content: space-between;
     background-color: rgba(7, 7, 7, 0.788);
     align-items: center;
+    width: 100%;
+    z-index: 1000;
     height: 80px;
+    position: fixed;
 }
 
 .logo{
@@ -291,4 +294,689 @@
 .cardb2 button:hover{
     background-color: rgb(158, 255, 207);
     transform: translateY(-2px);
+}
+
+
+.b3{
+    margin-top: 50px;
+}
+
+.introb3{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 0 30px 0;
+
+}
+
+.introb3 h5, h2{
+    color: var(--verde);
+    font-weight: bolder;
+}
+
+.cardsb3{
+    padding: 0 55px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cardb3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.13);
+    width: 350px;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 25px;
+    gap: 20px;
+}
+
+.imgb3{
+    width: 100%;
+    
+}
+
+.imgb3 img{
+    min-height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: rgb(205, 255, 234);
+}
+
+.inforcardb3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inforcardb3 h4{
+    font-size: 17px;
+}
+
+.inforcardb3 p{
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: rgb(107, 107, 107);
+}
+
+.verificado{
+    width: 15px;
+
+}
+
+.b4{
+    margin-top: 150px;
+    padding: 0 55px;
+    
+}
+
+
+
+.doacao{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(18, 87, 66);
+    padding: 50px 55px;
+    border-radius: 25px;
+    gap: 25px;
+    
+}
+
+
+
+.infordoacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+}
+
+.infordoacao h4{
+    color: aquamarine;
+    background-color: rgb(18, 128, 91);
+    text-align: center;
+    align-items: center;
+    width: 160px;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid aquamarine;
+}
+
+.infordoacao h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.infordoacao p{
+    color: rgb(214, 214, 214);
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inforfinaldoacao{
+    display: flex;
+    gap: 25px;
+}
+
+.inforfinaldoacao p{
+    font-size: 12px;
+}
+
+.inforfinaldoacao img{
+    width: 12px;
+    color: white;
+}
+
+
+.inputdoacao{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 15px;
+    position: relative;
+    border: 3px solid rgb(61, 197, 152);
+    animation: bordaAnimada 4s infinite ease-in-out;
+}
+
+@keyframes bordaAnimada{
+    0%{
+        
+        border-color: rgb(61, 197, 152);
+    }
+
+    25%{
+        border-color: rgb(29, 134, 99);
+    }
+
+    50%{
+        border-color: var(--verde);
+    }
+
+    75%{
+        border-color: black;
+    }
+
+    100%{
+        border-color: rgb(61, 197, 152);
+    }
+}
+
+@keyframes valorAnimado{
+    0%{
+        border-color: rgb(61, 197, 152);
+        color: rgb(61, 197, 152);
+    }
+
+    25%{
+        border-color: rgb(29, 134, 99);
+        color: rgb(29, 134, 99);
+    }
+
+    50%{
+        border-color: var(--verde);
+        color: var(--verde);
+    }
+
+    75%{
+        border-color: black;
+        color: black;
+    }
+
+    100%{
+        border-color: rgb(61, 197, 152);
+        color: rgb(61, 197, 152);
+    }
+}
+
+
+.inputdoacao h3{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.opdoacao{
+    margin: 15px 0 15px 0;
+}
+
+.opdoacao a{
+    color: var(--verde);
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid var(--verde);
+    transition: 0.5s;
+    animation: bordaAnimada 3s infinite ease-in-out;
+    animation: valorAnimado 3s infinite ease-in-out;
+}
+
+.opdoacao a:hover{
+    background-color: rgb(206, 255, 226);
+}
+
+.inputdoacao button{
+    padding: 15px;
+    background-color: rgb(61, 197, 152);
+    border: none;
+    border-radius:  10px;
+}
+
+.b5{
+    margin-top: 150px;
+}
+
+.videob5{
+    display: flex;
+    padding: 55px 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(219, 219, 219);
+}
+
+.inforb5{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inforb5 h2{
+    font-size: 20px;
+    position: relative;
+}
+
+.inforb5 h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 1px;
+    background-color: rgb(3, 54, 20);
+    border-radius: 10px;
+}
+
+.inforb5 p{
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.b6{
+    margin-top: 150px;
+    padding: 0 55px;
+}
+
+.fale{
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 55px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.493);
+}
+
+.inforb6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inforb6 h5{
+    color: var(--verde);
+}
+
+.inforb6 h2{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.inforb6 p{
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+}
+
+.contatob6{
+    display: flex;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.iconesb6{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.iconesb6 img{
+    width: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact h5{
+    color: black;
+}
+
+
+.social{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social img{
+    width: 20px;
+}
+
+.inputb6{
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+}
+
+.inputb6 label{
+    font-size: 12px;
+    font-weight: bolder;
+    padding-bottom: 3px;
+}
+
+.inputb6 input{
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid var(--verde);
+    margin-bottom: 25px;
+}
+
+.inputb6 select{
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+#mensage{
+    padding-bottom: 50px;
+}
+
+.inputb6 button{
+    background-color: var(--verde);
+    color: white;
+    font-size: 15;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+footer{
+    background-color: var(--verde);
+}
+
+.footercontainer{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(168, 168, 168);
+    gap: 45px;
+    padding: 55px 55px;
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.bloco1 img{
+    width: 200px;
+}
+
+.bloco1 p{
+    font-size: 12px;
+}
+
+.bloco1 h5{
+    color: white;
+}
+
+.bloco1 a{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
+
+.bloco1 a:hover{
+    color: white;
+}
+
+.bloco1 input{
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 1px solid white;
+}
+
+.bloco1 input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+.bloco1 button{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    color: rgb(14, 13, 13);
+    background-color: rgb(26, 187, 112);
+    transition: 0.5s;
+}
+
+.bloco1 button:hover{
+    cursor: pointer;
+    background-color: rgb(51, 221, 142);
+}
+
+.smal{
+    padding: 20px 55px;
+    font-size: 12px;
+    color: rgb(165, 164, 164);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .cards, .headerb2, .cardsb3, .b4, .videob5, .b6, .footercontainer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    
+    .cardsb2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 30px;
+    }
+
+    .cardb2 {
+        width: 100%;
+    }
+
+    
+    .doacao {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 30px;
+    }
+
+    .infordoacao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .infordoacao h2 {
+        font-size: 28px;
+    }
+
+    .inforfinaldoacao {
+        justify-content: center;
+    }
+
+    .inputdoacao {
+        width: 100%;
+    }
+
+    
+    .fale {
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 40px;
+    }
+
+    .inputb6 {
+        width: 100%;
+    }
+
+    
+    .footercontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .button {
+        margin-right: 0;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    
+    .logopelicula {
+        width: 80%;
+        max-width: 400px;
+        padding-top: 140px;
+    }
+
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    
+    .headerb2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 40px 20px 0 20px;
+    }
+
+    .temasb2 {
+        flex-wrap: wrap;
+    }
+
+    
+    .cardsb2 {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    
+    .cardsb3 {
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .cardb3 {
+        width: 100%;
+    }
+
+    
+    .videob5 {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .videob5 iframe, .videob5 video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .b4, .b5, .b6 {
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+
+    
+    .opdoacao {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .opdoacao a {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .infordoacao h2 {
+        font-size: 24px;
+    }
+
+    .inforfinaldoacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .contatob6 {
+        flex-direction: column;
+    }
+
+    
+    .footercontainer {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .smal {
+        padding: 20px;
+        text-align: center;
+    }
 }
